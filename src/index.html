@@ -1,17 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Web App Demo</title>
+    <style>
+        /* General Reset */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .container h1 {
+            font-size: 2.5em;
+            margin: 0 0 10px;
+        }
+
+        .container p {
+            font-size: 1.2em;
+            margin: 0;
+        }
+
+        .container a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #2575fc;
+            background: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .container a:hover {
+            background: #2575fc;
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .container h1 {
+                font-size: 2em;
+            }
+
+            .container p {
+                font-size: 1em;
+            }
+        }
+    </style>
 </head>
-
 <body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
+    <div class="container">
+        <h1>This is a Sample Web Application</h1>
+        <p>To demonstrate the functionality of Azure Web Implementation</p>
+        <a href="#">Learn More</a>
+    </div>
 </body>
-
 </html>
